@@ -61,7 +61,7 @@ class IDF_Views
         $v = new Pluf_Views();
         $request->POST['login'] = (isset($request->POST['login'])) ? mb_strtolower($request->POST['login']) : '';
         return $v->login($request, $match, Pluf::f('login_success_url'),
-                         array(), 'idf/login_form.html');
+                         array('register' => Pluf::f('allow_register')), 'idf/login_form.html');
     }
 
     /**

@@ -144,6 +144,9 @@ $cfg['bounce_email'] = 'no-reply@example.com';
 # It is mandatory if you are using the template system.
 $cfg['tmp_folder'] = '/tmp';
 
+# Allow registration on the site. this should either be true or false
+$cfg['allow_register'] = true;
+
 # Database configuration
 $cfg['db_login'] = 'www';
 $cfg['db_password'] = '';
